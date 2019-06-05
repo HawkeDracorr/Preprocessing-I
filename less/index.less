@@ -60,25 +60,46 @@ html, body {
 // Code I've done below here
 @outline-red: red solid 2px;
 
+.chunk-style {
+	width: 85%;
+	// border: black solid 2px;
+	border-radius: 5px;
+	background-color: lightgrey;
+	margin: 2% auto 2% auto;
+}
+.h2 {
+	display: inline-block;
+	font-size: 2.25rem;
+	padding-bottom: 5px;
+	border-bottom: black solid 2px;
+	margin-bottom: 10px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .site-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: auto;
+}
+
+nav {
+
 }
 
 header {
 	display: flex;
-	outline: @outline-red;
 	align-items: center;
 	justify-content: center;
-	width: 85%;
+	.chunk-style();
 
 	h2 {
-		display: inline-block;
-		font-size: 2.25rem;
-		padding-bottom: 5px;
-		border-bottom: black solid 2px;
-		margin-bottom: 10px;
+		.h2();
 	}
 	h3 {
 		font-size: 1.5rem;
@@ -89,6 +110,9 @@ header {
 	}
 	p {
 		line-height: 1.25rem;
+	}
+	div {
+		// height: 95%;
 	}
 }
 
@@ -105,11 +129,34 @@ header {
 		color: black;
 	}
 }
+
 .header-div {
 	border: grey solid 2px;
 	// height: 100%;
 	width: 45%;
 
+}
+
+.section-one{
+	.chunk-style();
+	display: flex;
+	justify-content: center;
+}
+
+.section-two{
+	.chunk-style();
+	display: flex;
+
+	h2 {
+	.h2();
+	}
+}
+.section-two-div {
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	flex-shrink: 0;
 }
 
 img {

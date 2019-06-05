@@ -134,17 +134,38 @@ html,
 body {
   height: 100%;
 }
+.chunk-style {
+  width: 85%;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin: 2% auto 2% auto;
+}
+.h2 {
+  display: inline-block;
+  font-size: 2.25rem;
+  padding-bottom: 5px;
+  border-bottom: black solid 2px;
+  margin-bottom: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .site-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: auto;
 }
 header {
   display: flex;
-  outline: red solid 2px;
   align-items: center;
   justify-content: center;
   width: 85%;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin: 2% auto 2% auto;
 }
 header h2 {
   display: inline-block;
@@ -177,6 +198,35 @@ header p {
 .header-div {
   border: grey solid 2px;
   width: 45%;
+}
+.section-one {
+  width: 85%;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin: 2% auto 2% auto;
+  display: flex;
+  justify-content: center;
+}
+.section-two {
+  width: 85%;
+  border-radius: 5px;
+  background-color: lightgrey;
+  margin: 2% auto 2% auto;
+  display: flex;
+}
+.section-two h2 {
+  display: inline-block;
+  font-size: 2.25rem;
+  padding-bottom: 5px;
+  border-bottom: black solid 2px;
+  margin-bottom: 10px;
+}
+.section-two-div {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  flex-shrink: 0;
 }
 img {
   width: 195px;
