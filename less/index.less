@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,63 @@ html, body {
     height: 100%;
 }
 
+// Code I've done below here
+@outline-red: red solid 2px;
+
+.site-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	outline: @outline-red;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+
+	h2 {
+		display: inline-block;
+		font-size: 2.25rem;
+		padding-bottom: 5px;
+		border-bottom: black solid 2px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: 2.5%;
+	}
+	b {
+		font-weight: bold;
+	}
+	p {
+		line-height: 1.25rem;
+	}
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		color: grey;
+
+	}
+	a {
+		color: black;
+	}
+}
+.header-div {
+	border: grey solid 2px;
+	// height: 100%;
+	width: 45%;
+
+}
+
+img {
+	width: 195px;
+	height: 195px;
+	border-radius: 50%;
+}
