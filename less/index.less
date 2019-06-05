@@ -58,23 +58,33 @@ html, body {
 }
 
 // Code I've done below here
-@outline-red: red solid 2px;
+// @outline-red: red solid 2px;
 
 .chunk-style {
 	width: 85%;
-	// border: black solid 2px;
 	border-radius: 5px;
 	background-color: lightgrey;
 	margin: 2% auto 2% auto;
 }
-.h2 {
+.heading {
 	display: inline-block;
 	font-size: 2.25rem;
+	font-family: 'Volkhov', serif;
 	padding-bottom: 5px;
 	border-bottom: black solid 2px;
 	margin-bottom: 10px;
 }
+.subheading {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 1.5rem;
+	margin-bottom: 2.5%;
+}
 
+.print {
+	line-height: 1.25rem;
+	font-size: 1.15rem;
+	font-family: 'Biryani', sans-serif;
+}
 body {
 	display: flex;
 	justify-content: center;
@@ -86,6 +96,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: auto;
+	background-color: grey;
 }
 
 nav {
@@ -96,23 +107,50 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	.chunk-style();
 
+	.header-div {
+		height: 95%;
+		// outline: red solid 2px;
+		// padding-bottom: 150px;
+	}
+	.intro {
+		// padding-bottom: 15rem;
+	}
+	.test {
+		padding-bottom: 3rem;
+	}
 	h2 {
-		.h2();
+		.heading();
 	}
 	h3 {
-		font-size: 1.5rem;
-		margin-bottom: 2.5%;
+		// font-size: 1.5rem;
+		// margin-bottom: 2.5%;
+		.subheading();
 	}
 	b {
 		font-weight: bold;
+		line-height: 1.5rem;
 	}
 	p {
-		line-height: 1.25rem;
+		// line-height: 1.25rem;
+		.print();
 	}
 	div {
 		// height: 95%;
+	}
+	.headshot {
+		display: flex;
+		// align-items: center;
+		justify-content: center;
+	}
+	.intro {
+		// height: 95%;
+	}
+	img {
+		width: 57%;
+		border-radius: 50%;
 	}
 }
 
@@ -140,7 +178,17 @@ header {
 .section-one{
 	.chunk-style();
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
+	.subheading();
+	h3 {
+		border-bottom: grey solid 3px;
+	}
+	li {
+		padding-right: 1rem;
+	}
+	i {
+		padding-left: 1rem;
+	}
 }
 
 .section-two{
@@ -148,8 +196,9 @@ header {
 	display: flex;
 
 	h2 {
-	.h2();
+	.heading();
 	}
+	.subheading();
 }
 .section-two-div {
 	display: flex;
@@ -157,10 +206,4 @@ header {
 }
 footer {
 	flex-shrink: 0;
-}
-
-img {
-	width: 195px;
-	height: 195px;
-	border-radius: 50%;
 }

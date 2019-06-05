@@ -140,12 +140,23 @@ body {
   background-color: lightgrey;
   margin: 2% auto 2% auto;
 }
-.h2 {
+.heading {
   display: inline-block;
   font-size: 2.25rem;
+  font-family: 'Volkhov', serif;
   padding-bottom: 5px;
   border-bottom: black solid 2px;
   margin-bottom: 10px;
+}
+.subheading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5%;
+}
+.print {
+  line-height: 1.25rem;
+  font-size: 1.15rem;
+  font-family: 'Biryani', sans-serif;
 }
 body {
   display: flex;
@@ -157,6 +168,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: auto;
+  background-color: grey;
 }
 header {
   display: flex;
@@ -167,22 +179,41 @@ header {
   background-color: lightgrey;
   margin: 2% auto 2% auto;
 }
+header .header-div {
+  height: 95%;
+}
+header .test {
+  padding-bottom: 3rem;
+}
 header h2 {
   display: inline-block;
   font-size: 2.25rem;
+  font-family: 'Volkhov', serif;
   padding-bottom: 5px;
   border-bottom: black solid 2px;
   margin-bottom: 10px;
 }
 header h3 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
   margin-bottom: 2.5%;
 }
 header b {
   font-weight: bold;
+  line-height: 1.5rem;
 }
 header p {
   line-height: 1.25rem;
+  font-size: 1.15rem;
+  font-family: 'Biryani', sans-serif;
+}
+header .headshot {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 57%;
+  border-radius: 50%;
 }
 .social-links {
   display: flex;
@@ -205,7 +236,19 @@ header p {
   background-color: lightgrey;
   margin: 2% auto 2% auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5%;
+}
+.section-one h3 {
+  border-bottom: grey solid 3px;
+}
+.section-one li {
+  padding-right: 1rem;
+}
+.section-one i {
+  padding-left: 1rem;
 }
 .section-two {
   width: 85%;
@@ -213,10 +256,14 @@ header p {
   background-color: lightgrey;
   margin: 2% auto 2% auto;
   display: flex;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 2.5%;
 }
 .section-two h2 {
   display: inline-block;
   font-size: 2.25rem;
+  font-family: 'Volkhov', serif;
   padding-bottom: 5px;
   border-bottom: black solid 2px;
   margin-bottom: 10px;
@@ -227,9 +274,4 @@ header p {
 }
 footer {
   flex-shrink: 0;
-}
-img {
-  width: 195px;
-  height: 195px;
-  border-radius: 50%;
 }
